@@ -1,0 +1,121 @@
+# =============================================================================
+# CLAUDE CODE
+# =============================================================================
+.claude/
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# =============================================================================
+# DATA FILES - Archivos de datos
+# =============================================================================
+# IMPORTANTE: GitHub tiene límite de 100MB por archivo
+# nyc_taxi.csv es ~121MB, por lo tanto DEBE ser ignorado
+
+# Ignorar datos grandes en carpeta datos/
+datos/*.csv
+datos/*.parquet
+datos/*.db
+datos/*.sqlite
+
+# Ignorar bases de datos en la raíz del proyecto
+*.db
+*.sqlite
+*.sqlite3
+
+# EXCEPCIONES: Permitir archivos pequeños de ejemplo (si los hay)
+# !datos/ejemplo_pequeño.csv
+
+# Ignorar imágenes generadas por ejercicios
+datos/*.png
+datos/*.jpg
+datos/*.jpeg
+datos/*.gif
+
+# Permitir solo scripts y documentación
+!datos/descargar_datos.py
+!datos/README.md
+!datos/*.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Flask
+instance/
+.webassets-cache
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+
+# =============================================================================
+# ARCHIVOS SOLO PARA EL PROFESOR (Los alumnos NO deben ver estos)
+# =============================================================================
+GUIA_PROFESOR.md
+INSTRUCCIONES_PROFESOR.md
+INSTRUCCIONES_PROFESOR_SIMPLE.md
+EJEMPLO_PRIMERA_TAREA.md
+ISSUE_TEMPLATE_SIMPLE.md
+PROXIMOS_PASOS.md
+RESUMEN_COMPLETO.md
+DIAGRAMA_SIMPLE.md
+ESTRUCTURA_PROFESOR.md
+
+# Archivos de notas privadas del profesor
+NOTAS_PROFESOR.md
+CALIFICACIONES.md
+*.profesor.md
+
+# Configuración local del profesor
+.env.local
+secrets.txt
+credenciales.txt
+
+# Backups y exportaciones
+backups/
+exports/
+*.backup
+
+# Archivos de evaluación
+evaluaciones/
+rubrica_privada.md
